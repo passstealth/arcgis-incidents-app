@@ -1,9 +1,9 @@
 <div id="mapViewDiv" style="height: 100vh; width: 100%; background-color: #000;"></div>
 <div class="top-right-div">
 
-  <h3 style="text-align: center; color:#fff;">
+  <h1 style="text-align: center; color:#fff;">
     <span class="badge text-bg-warning">Active Incidents <span class="badge text-bg-danger">{{Incidents.length}}</span></span>
-  </h3>
+  </h1>
   <ul class="list-group" style="font-size: 10pt;" >
     <li class="list-group-item list-group-item-danger" *ngFor="let theincident of Incidents; index as i"  >
       <span (click)="zoomToArea(theincident.longitude, theincident.latitude, 18)">
